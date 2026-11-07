@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voca - AI Expense Tracker for iPhone</title>
+  <meta name="description" content="Voca is the private AI expense tracker for iOS. Instant receipt scanning with Vision OCR, hands-free voice logging with Siri, and on-device privacy.">
+  <link rel="icon" type="image/png" href="assets/AppLogo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-link">
+        <img src="assets/AppLogo.png" alt="Voca App Icon" class="brand-logo" width="32" height="32">
+        <span>Voca</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active" aria-current="page">Overview</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="privacy.html" class="nav-link">Privacy</a></li>
+          <li><a href="support.html" class="nav-link">Support</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle visual theme">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/>
+          </svg>
+        </button>
+        <a href="#pricing" class="btn-primary">Get Voca</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-pill">
+          <strong>NEW</strong> iOS 17 &amp; iOS 18 Ready • Built with Swift 6
+        </div>
+
+        <h1 class="hero-title">Track Expenses at the Speed of Speech and Sight.</h1>
+        <p class="hero-subtitle">
+          Scan paper receipts with instant on-device OCR, log purchases hands-free with Siri, and monitor your monthly budget. Private by design with personal iCloud sync.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#pricing" class="btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.61-.75 1.04-1.8 0.92-2.87-.9.04-2 .6-2.63 1.34-.56.65-.98 1.71-.85 2.76 1.01.08 1.95-.48 2.56-1.23z"/>
+            </svg>
+            Download on the App Store
+          </a>
+          <a href="#features" class="btn-secondary">Explore Capabilities</a>
+        </div>
+
+        <!-- Interactive App Device Stage -->
+        <div class="device-stage" aria-label="Interactive preview of Voca features">
+          <div class="mockup-grid">
+            <div class="mockup-card">
+              <div class="mockup-card-header">
+                <span class="mockup-card-title">Instant Receipt Scan</span>
+                <span style="font-size: 0.8rem; font-weight: 600; color: var(--success-color);">Verified OCR</span>
+              </div>
+              <div class="receipt-item-row">
+                <span>Merchant</span>
+                <strong>Artisan Coffee &amp; Bakery</strong>
+              </div>
+              <div class="receipt-item-row">
+                <span>Total Amount</span>
+                <strong style="color: var(--text-primary);">$18.50</strong>
+              </div>
+              <div class="receipt-item-row">
+                <span>Category</span>
+                <span>Dining &amp; Drinks</span>
+              </div>
+              <div class="receipt-item-row">
+                <span>Sales Tax Detected</span>
+                <span>$1.45</span>
+              </div>
+            </div>
+
+            <div class="mockup-card">
+              <div class="mockup-card-header">
+                <span class="mockup-card-title">Monthly Budget Goal</span>
+                <span style="font-size: 0.8rem; color: var(--text-tertiary);">October 2026</span>
+              </div>
+              <div class="mockup-value">$642.50</div>
+              <div class="mockup-subvalue">Remaining of $1,200.00 target (46% used)</div>
+              <div style="height: 6px; background-color: var(--bg-tertiary); border-radius: 3px; margin-top: 14px; overflow: hidden;">
+                <div style="width: 46%; height: 100%; background-color: var(--accent-color); border-radius: 3px;"></div>
+              </div>
+            </div>
+
+            <div class="siri-pill-card">
+              <img src="assets/SiriLogo.png" alt="Siri Integration" class="siri-icon" width="32" height="32">
+              <div>
+                <div style="font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-tertiary);">Touchless Voice Entry</div>
+                <div style="font-size: 0.95rem; font-weight: 500; color: var(--text-primary);">"Hey Siri, log $15 for lunch"</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Engineered for iOS</div>
+          <h2 class="section-title">Speed, Precision, and Absolute Privacy.</h2>
+          <p>Every tool in Voca is built natively to eliminate the friction of personal financial bookkeeping.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-box">
+            <div class="feature-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+            </div>
+            <h3>Instant Vision OCR Scanner</h3>
+            <p>Point your camera at any paper receipt. Apple Vision machine learning extracts the total, tax, and merchant in milliseconds without cloud delay.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+            </div>
+            <h3>Hands-Free Siri Shortcuts</h3>
+            <p>Speak naturally while driving or walking. Siri Shortcuts and AppIntents parse amounts and categories directly into your ledger without opening the app.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <h3>Comprehensive Audit Reports</h3>
+            <p>Analyze spending patterns across customizable date ranges with Swift Charts. Export itemized RFC-4180 CSV files or formatted PDF audit summaries.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            </div>
+            <h3>Live Activities &amp; Dynamic Island</h3>
+            <p>Keep your daily spending pace visible at a glance. Real-time Live Activities show budget status directly on your iPhone Lock Screen.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>100% Private iCloud Sync</h3>
+            <p>Your financial transactions are never stored on third-party servers. All data synchronizes across your devices using encrypted Apple CloudKit storage.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+            </div>
+            <h3>Intelligent Monthly Quotas</h3>
+            <p>Get started completely free with 5 monthly scans. Need more? Earn bonus scans with short rewarded ads or upgrade to Voca Pro for unlimited access.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Fair and Transparent</div>
+          <h2 class="section-title">Choose the Plan That Fits Your Workflow.</h2>
+          <p>Get started free, or unlock unlimited scans, Siri logging, and full reports with Voca Pro.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Free Plan -->
+          <div class="pricing-card">
+            <div class="pricing-name">Free Plan</div>
+            <p class="pricing-desc">Essential manual logging and receipt scans for casual budget tracking.</p>
+            <div class="pricing-cost">
+              <span class="pricing-amount">$0</span>
+              <span class="pricing-period">/ forever</span>
+            </div>
+            <ul class="pricing-features-list">
+              <li class="pricing-feature-item">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>5 AI receipt scans per calendar month</span>
+              </li>
+              <li class="pricing-feature-item">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Optional rewarded ads for bonus scans</span>
+              </li>
+              <li class="pricing-feature-item">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Unlimited manual expense entries</span>
+              </li>
+              <li class="pricing-feature-item">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Encrypted private iCloud sync</span>
+              </li>
+            </ul>
+            <a href="#" class="btn-secondary" style="width: 100%;">Get Started Free</a>
+          </div>
+
+          <!-- 3-Month Plan -->
+          <div class="pricing-card">
+            <span class="pricing-tag">Save 16%</span>
+            <div class="pricing-name">3 Months Pro</div>
+            <p class="pricing-desc">Flexible quarterly subscription for active expense management.</p>
+            <div class="pricing-cost">
+              <span class="pricing-amount">$9.99</span>
+              <span class="pricing-period">/ 3 months</span>
+            </div>
+            <ul class="pricing-features-list">
+              <li class="pricing-feature-item">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Unlimited instant AI receipt scans</span>
+              </li>
+              <li class="pricing-feature-item">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Hands-free Siri Shortcuts and voice logging</span>
+              </li>
+              <li class="pricing-feature-item">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Lock Screen &amp; Dynamic Island Live Activities</span>
+              </li>
+              <li class="pricing-feature-item">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Full Reports tab with CSV &amp; PDF audit exports</span>
+              </li>
+              <li class="pricing-feature-item">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>100% ad-free experience</span>
+              </li>
+            </ul>
+            <a href="#" class="btn-primary" style="width: 100%;">Subscribe Quarterly</a>
+          </div>
+
+          <!-- Annual Plan (Featured) -->
+          <div class="pricing-card featured">
+            <span class="pricing-tag" style="background-color: var(--text-primary); color: var(--bg-primary);">Save 37%</span>
+            <div class="pricing-name">Annual Pro</div>
+            <p class="pricing-desc">Our best value plan for professionals and power users.</p>
+            <div class="pricing-cost">
+              <span class="pricing-amount">$29.99</span>
+              <span class="pricing-period">/ year ($2.50/mo)</span>
+            </div>
+            <ul class="pricing-features-list">
+              <li class="pricing-feature-item">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Unlimited instant AI receipt scans</span>
+              </li>
+              <li class="pricing-feature-item">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Hands-free Siri Shortcuts and voice logging</span>
+              </li>
+              <li class="pricing-feature-item">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Lock Screen &amp; Dynamic Island Live Activities</span>
+              </li>
+              <li class="pricing-feature-item">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Full Reports tab with CSV &amp; PDF audit exports</span>
+              </li>
+              <li class="pricing-feature-item">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>100% ad-free experience</span>
+              </li>
+            </ul>
+            <a href="#" class="btn-primary" style="width: 100%;">Subscribe Annually</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-brand-logo">
+            <img src="assets/AppLogo.png" alt="Voca Logo" width="28" height="28">
+            <span>Voca</span>
+          </div>
+          <p>Private, instant, AI-assisted expense tracking designed for iOS.</p>
+        </div>
+
+        <div class="footer-links-group">
+          <div class="footer-col">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="index.html">Overview</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Help</h4>
+            <ul>
+              <li><a href="support.html">Support Center</a></li>
+              <li><a href="mailto:support@voca.app">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Voca. All rights reserved.</p>
+        <p>Built with Swift 6, SwiftData, and StoreKit 2.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+    function getCurrentTheme() {
+      const savedTheme = localStorage.getItem('voca-theme');
+      if (savedTheme) return savedTheme;
+      return prefersDark.matches ? 'dark' : 'light';
+    }
+
+    function applyTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('voca-theme', theme);
+    }
+
+    applyTheme(getCurrentTheme());
+
+    themeToggleBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || getCurrentTheme();
+      const next = current === 'dark' ? 'light' : 'dark';
+      applyTheme(next);
+    });
+  </script>
+</body>
+</html>
